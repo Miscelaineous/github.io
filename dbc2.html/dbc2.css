@@ -1,0 +1,51 @@
+
+
+body	{
+	background-color: #00FFFF;
+
+}
+
+header	{
+	color: #0000CC;
+	font-size: 36px;
+	font-style: bold;
+	text-align: center;
+}
+
+h1	{
+	color: #0000CC;
+	font-size: 20px;
+	text-align: center;
+}
+
+span	{
+	font-style: bold;
+	font-style: italic;
+}
+
+img{
+	width: 250px;
+	height: 150px;
+	position: center;
+	padding: 10px;
+}
+
+p 	{
+	text-align: justify;
+	margin: auto;
+	width: 400px;
+}
+
+footer	{
+	color: red;
+	margin-top: 20px;
+}
+
+div.transbox {
+    width: 500px;
+    height: 100%;
+    margin: 30px 50px;
+    background-color: #ffffff;
+    border: 1px solid black;  
+}
+
