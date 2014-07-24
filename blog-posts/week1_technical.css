@@ -1,7 +1,7 @@
 body	{
 	background-color: #C0C0C0;
 	max-width: 500px;
-	position: center;
+	position: fixed;
 }
 
 header	{
