@@ -1,7 +1,7 @@
 body	{
 	background-color: #C0C0C0;
 	max-width: 500px;
-	position: fixed;
+	position: relative;
 }
 
 header	{
@@ -47,3 +47,6 @@ img	{
 	text-align: center;
 }
 
+ul	{
+	font-size: 10px;
+}
