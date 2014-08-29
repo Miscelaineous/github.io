@@ -1,7 +1,9 @@
 body	{
-	background-color: #C0C0C0;
+	background-color: #EFF1F2;
 	max-width: 500px;
 	position: relative;
+	margin: auto;
+	text-align: center;
 }
 
 header	{
@@ -22,6 +24,10 @@ h1	{
 img	{
 	width: 30px;
 	height: 30px;
+}
+
+#link	{
+	text-align: center;
 }
 
 #intro {

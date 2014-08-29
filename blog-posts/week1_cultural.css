@@ -104,10 +104,17 @@ input, select {
 /* end of HTML 5 reset */
 
 body 	{
-	margin: 5%;
+	margin: 3% 5% 5% 5%;
 	padding: 2%;
-	background-color: #FF99FF;
+	background-color: #DCBF88;
+
 }
+
+/*	background-image: URL("http://www.imagesup.net/dm-16140825913313.png" alt="th 3"/> no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover; */
 
 header {
 	text-align: center;
@@ -120,9 +127,8 @@ header {
 	background-color: #FFFFCC;
 }
 
-#girl	{
+#money	{
 	text-align: center;
-	/* can't resize image, have tried! */
 }
 
 #second	{
@@ -131,10 +137,10 @@ header {
 	background-color: #FFFFCC;
 }
 
-#student {
+#bootcamp	{
 	text-align: center;
-	/* can't resize image, have tried! */
 }
+
 
 #third	{
 	padding: 2%;
@@ -142,9 +148,8 @@ header {
 	background-color: #FFFFCC;
 }
 
-#plane	{
+#student {
 	text-align: center;
-	/* can't resize image, have tried! */
 }
 
 #fourth	{
@@ -153,27 +158,45 @@ header {
 	background-color: #FFFFCC;
 }
 
-#pitstop	{
+#twain {
 	text-align: center;
-	/* can't resize image, have tried! */
 }
 
 #transbox {
-    padding: 1%;
-    width: 100%;
-    margin: 3% auto;
+    padding: 3%;
+    /*width: 100%;*/
+    margin: 0 0 5% 0;
     background-color: #FFFFCC;
     border: 1px solid black;
     opacity: 100%;
+    height: cover;
 }
 
-#transbox p {
+#transbox2 {
     padding: 1%;
-    width: 100%;
-    margin: 3% auto;
+    /*width: 100%;*/
+    margin: 5% auto;
+    background-color: #FFFFCC;
+    border: 1px solid black;
+    opacity: 100%;
+    height: cover;
+}
+
+#transbox2 p {
+    padding: 1%;
+    /*width: 100%;*/
+    margin: auto;
     text-align: center;
     font-weight: bold;
     color: red;
+}
+
+#link {
+    text-align: center;
+}
+
+#container {
+    width: 100%;
 }
 
 

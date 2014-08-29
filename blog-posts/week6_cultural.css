@@ -103,88 +103,35 @@ input, select {
 
 /* end of HTML 5 reset */
 
-body    {
+
+body	{
+    background: url("http://www.imagesup.net/?di=5140826172713") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+ }
+
+ #link  {
+  text-align: center;
+  }
+
+ h1, h2	{
+ 	text-align: center;
+ }
+
+ h3 {
+ 	text-align: center;
+ 	font-style: italic;
+ }
+
+ #transbox {
+    padding: 1%;
+    width: 75%;
+    height: 50%;
+    margin: 3% auto;
     background-color: white;
-    margin: auto;
-    padding 5%;
-}
-
-header {
-    padding: 1%;
-    text-align: center;
-}
-
-h4  {
-    text-align: center;
-}
-
-#link   {
-    text-align: center;
-}
-
-#wrapper {
-    margin: auto;
-    padding: 2%;
-}
-
-#first {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-#second {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-#third {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-/*Tried to format picture to center and re-size but can't make it happen!
-
-#third h4 p href {
-    position: relative;
-    margins: auto;
-    max-height: 100%;
-    max-width: 100%;
-}*/
-
-#fourth {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-#container {
-    width: 100%;
-}
-
-#transbox {
-    padding: 1%;
-    /*width: 80%;*/
-    margin: 5%;
-    height: 180px;
-    background-color: #FFFFCC;
     border: 1px solid black;
-    opacity: 100%;
-    position: relative;
-}
-
-#transbox p {
-    padding: 1%;
-    max-height: 50px;
-    /*width: 80%%;*/
-    margin: 5%;
-    text-align: center;
-    font-weight: bold;
-    color: red;
+    opacity: 0.75;
 }

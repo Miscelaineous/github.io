@@ -103,88 +103,70 @@ input, select {
 
 /* end of HTML 5 reset */
 
-body    {
-    background-color: white;
-    margin: auto;
-    padding 5%;
+body {
+    background: url("http://www.imagesup.net/?di=214083385750")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-header {
-    padding: 1%;
+h1, h2, h4  {
     text-align: center;
-}
-
-h4  {
-    text-align: center;
-}
-
-#link   {
-    text-align: center;
-}
-
-#wrapper {
-    margin: auto;
-    padding: 2%;
-}
-
-#first {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-#second {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-#third {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
-}
-
-/*Tried to format picture to center and re-size but can't make it happen!
-
-#third h4 p href {
-    position: relative;
-    margins: auto;
-    max-height: 100%;
-    max-width: 100%;
-}*/
-
-#fourth {
-    background-color: #e0e0e0;
-    margin: 3%;
-    border-style: solid;
-    border-color: black;
 }
 
 #container {
-    width: 100%;
+  width: 100%;
+}
+
+#left_col {
+   float:left;
+   width: 50%;
+   border-width: 10%;
+   border-style: solid;
+   border-color: black;
+   background-color: #bbefab;
+   padding: 2%;
+   margin: 5% 1% auto 5%;
+}
+
+#right_col {
+   float:right;
+   width: 20%;
+   border-width: 10%;
+   border-style: solid;
+   border-color: black;
+   background-color: #bbefab;
+   padding: 2%;
+   margin: 5% 5% auto 1%;
+}
+
+#footer {
+    padding: 3%;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    /*height: 3em;*/
+    margin-top: -3em;
 }
 
 #transbox {
     padding: 1%;
-    /*width: 80%;*/
-    margin: 5%;
-    height: 180px;
-    background-color: #FFFFCC;
+    /*width: 100%;*/
+    margin: auto;
+    background-color: #bbefab;
     border: 1px solid black;
     opacity: 100%;
-    position: relative;
+    height: 100px;
 }
 
 #transbox p {
-    padding: 1%;
-    max-height: 50px;
-    /*width: 80%%;*/
-    margin: 5%;
+    padding: 5%;
+    /*width: 100%;*/
+    margin: auto;
     text-align: center;
     font-weight: bold;
     color: red;
+    height: 100px;
 }
+
