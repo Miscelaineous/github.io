@@ -108,21 +108,24 @@ header {
 	text-align: center;
 }
 
-body	{
-	margin: 5%;
-	padding: 2%;
-	background-color: #CCFFFF;
-}
-
 #transbox1 {
     padding: 1%;
     width: 100%;
+    height: 100%;
     margin: 3% auto;
     background-color: #99CCFF;
     border: 1px solid black;
     opacity: 100%;
 }
 
+body	{
+	margin: 5%;
+	padding: 2%;
+	background-color: #CCFFFF;
+    background-image: URL("http://www.imagesup.net/dm-16140825913313.png" alt="th 3"/> no-repeat cover;
+}
+
+/*
 #transbox2 {
     padding: 1%;
     width: 100%;
@@ -136,4 +139,4 @@ body	{
     text-align: center;
     font-weight: bold;
     color: red;
-}
+}*/

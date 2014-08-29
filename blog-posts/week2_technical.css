@@ -111,12 +111,16 @@ input, select {
 */
 
 body  {
-	background-color: green;
+	background-color: #10B372;
    padding: 2%;
 }
 
 h1 {
    text-align: center;
+}
+
+#link {
+  text-align: center;
 }
 
 #wrap {
@@ -142,6 +146,7 @@ h1 {
    border-color: black;
    background-color: white;
    padding: 2%;
+   overflow: scroll;
 }
 
 #footer {
@@ -157,7 +162,7 @@ h1 {
     padding: 1%;
     width: 100%;
     margin: 3% auto;
-    background-color: #FFFFCC;
+    background-color: white;
     border: 1px solid black;
     opacity: 100%;
 }
