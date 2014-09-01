@@ -147,6 +147,10 @@ body {
     display: inline-block;
 }
 
+#footer h2 {
+    text-align: center;
+}
+
 #left_col, #right_col, #footer    {
     background-color: #FFFFCC;
 }
