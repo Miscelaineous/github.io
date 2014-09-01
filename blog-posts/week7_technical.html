@@ -1,31 +1,121 @@
-U3.W7: Technical Blog
-Learning Competencies
+<!DOCTYPE html>
+<head>
 
-Explain SQL injection and identify ways to prevent it
-Compare benefits of SQL vs NoSQL databases
-Discuss database query optimization
-Release 0: Copy Your Blog Template
+	<meta charset="utf-8"/>
+	<title>DBC Week 7 &#45; Technical Blog</title>
+	<link rel="stylesheet" type="text/css" href = "week7_technical.css"> 
 
-In the blog-posts directory in your [USERNAME]github.io repository, copy your blog tempate into a new HTML file named week7_technical.html.
+</head>
 
-If you don't have a blog-posts directory, create one, move all of your blog posts there, and modify the links on the index of your site. Make sure if someone navigates to your site, that they can see all of your blog posts!
+<body>
 
-Release 1: Research
+<div id="container">
 
-Select a topic below to research.
+	<h2>SQL vs NoSQL - What are the differences?</h2>
 
-Look up issues with SQL (specifically SQL Injection) Enjoy this XKCD comic for an amusing intro. What is it? Why is it a problem? What can newb programmers do to combat this issue?
+	<h2>SQL databases</h2>
 
-Compare SQL databases with NoSQL databases. What are the pros and cons of either? Which are you most excited to work with and why?
+		<ul>
+			<li>Referred to as relational databases</li>
+			<li>Table-based databases, consisting of columns and rows</li>
+			<li>Have pre-defined schema for structured data</li>
+			<li>Vertically scalable, powered by the hardware</li>
+			<li>Uses 'Structured Query Langugage' (SQL) to define and manipulate data, which is standardised across all SQL databases</li>
+			<li>Good for complex queries</li>
+			<li>For properties: SQL databases emphasizes on ACID properties (Atomicity, Consistency, Isolation and Durability)</li>
+			<li>Strong vendor support</li>
+			<li>Examples, MySql, Sqlite, Oracle</li>
+		</ul>
 
-Imagine having a huge database with millions of entries. It would probably take a lot of time to run advanced queries on such a large dataset. What are some of the things you can do to optimize SQL queries?
+	<h2>NoSQL databases</h2>
 
-Release 2: Blog!
+		<ul>
+			<li>Referred to as non-relational databases</li>
+			<li>Document-based databases, reliant on key-value pairs, graphs or wide-column stores</li>
+			<li>Have dynamic schema for unstructured data</li>
+			<li>Horizontally scalable, powered by increasing the number of servers (to reduce the load)</li>
+			<li>Uses 'Unstructured Query Language' (UQL), the syntax of which varies from database to database</li>
+			<li>Not good for complex queries, due to lack of standard interfaces</li>
+			<li>For properties: NoSQL database follows the Brewers CAP theorem (Consistency, Availability and Partition tolerance)</li>
+			<li>Poor vendor support, still reliant on community</li>
+			<li>Examples, MongoDB, RavenDb and CouchDb</li>
+		</ul>
 
-Write a blog post about what you learned. Teach your audience and future employer!
+	<h2>SQL injection - what is it?</h2>
 
-Release 3: Publish
+		<p>SQL injection is a malicious technique to extract, manipulate and delete database contents by an 'attacker'.  It is deemed one of the biggest threats to SQL databases.  It achieves its aim bacause it successfully exploits a security vulnerability in the associated application's software.</p>
 
-Link to your blog on the index of your github.io site and push your changes.
+		<h3>Why is it done?</h3>
 
-Share your blog on the google+ community under "Blog Posts!" Read others blogs. What did you like about them?
+			<p>There are a ton of reasons why hackers would choose to target a database, including:</p>
+
+			<ul>
+				<li>rising to the challenge of bypassing logins and getting to data</li>
+				<li>to access the data</li>
+				<li>to modify the database content</li>
+				<li>to shut down the server</li>
+				<li>a combination of the above.</li>
+			</ul>
+
+		<h3>How is it done?</h3>
+	
+			<p>There are a number of techniques:</p>
+			
+			<ul>
+				<li><strong>Incorrectly filtered escape characters</strong> - where input is passed into a SQL statement.  This approach pulls up records of all the specified usernames from the relevant table, allowing for these records to be manipulated or even deleted.</li>
+				<li><strong>Incorrect type handling</strong> - where a user-supplied field is not strongly typed or checked for constraints.  This opens the opportunity for data to be manipulated.</li>
+				<li><strong>Blind injection</strong> - this forces the database to evaluate a logical statement to enable new (unintended) data to be populated into the database.</li>
+			</ul>
+
+		<h3>So what can be done about it?</h3>
+
+			<p>A significant cause of the issue is the database's inability to differentiate code from SQL code and the data inserted by users into the database.  So to improve this, a few quick wins:</p>
+
+			<ul>
+				<li><strong>Prepared Statements</strong> - also known as parameterized statements, which aims to define all the SQL code and pass in each parameter to the query, facilitating the ability for the database to distinguish between code and data.  Increasingly, coding frameworks are automatically parametising inputs.</li>
+				<li><strong>Incorrect type handling</strong> - where a user-supplied field is not strongly typed or checked for constraints.  Correcting this, reduces the risk of confusion by the database.</li>
+				<li><strong>Escaping all user-supplied input</strong> - ensures that characters with special meanings in SQL are escaped within the code, so that data and code are distinguished.</li>
+
+			</ul>
+
+	<div id="last">
+
+		<h2>SQL Optimisation - 3 tips</h2>
+
+				<h4>1. Which of the following queries is the most optimized?</h4>
+
+				<blockquote>a. SELECT column_name FROM table_name WHERE LOWER(column_name) = ‘name’.
+				</br>b. SELECT column_name FROM table_name WHERE column_name = ‘NAME’ or column_name = ‘name’.
+				</br>c. SELECT * FROM table_name WHERE LOWER(column_name) = ‘name’
+				</br>d. SELECT * FROM table_name WHERE column_name = ‘NAME’ or corumn_name = ‘name’.</blockquote>
+
+				<p class="Answer">Answer B</p>
+
+				<p>Selecting UPPER, LOWER functions should be avoided - instead specify columns</p>
+
+				<h4>2. Which of the following is the best way of inserting a binary image into database?</h4>
+
+				<blockquote>a. Use Insert statement</br>b. Use Stored procedure</br>c. Both give same performance</br>d. None of these</blockquote>
+
+				<p class="Answer">Answer C</p>
+
+				<p>The application must first convert the binary value into a character string (which doubles its size, thus increasing network traffic and taking more time) before it can be sent to the server. And when the server receives the character string, it then has to convert it back to the binary format (taking even more time).</p>
+						
+				<h4>3. What is the best way to verify the existence of a record in a table?</h4>
+				<p>Don’t use SELECT COUNT(*), as it is very inefficient and wastes server resources.</p>
+
+			</div>
+
+	<div id ="link">
+
+		<p><a href="file:///Users/elainefinn/github.io/index.html" target="_blank">Home Page</a></p>
+
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
